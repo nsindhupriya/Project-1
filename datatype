@@ -1,0 +1,123 @@
+Project 1 - Creation of user defined data type to implement the 
+user
+Overview of the Project:
+On this project, interfaces for mathematical Set concept are carried out the use of the c language. The consumer can input lists of facts, and the program will output the union and intersection of those two lists. The goal is to offer a practical implementation of set operations, leveraging linked lists to store and manage the facts.
+
+Goals:
+1. enforce interfaces for mathematical Set theory the use of C programming.
+
+2. permit users to enter lists of information and output the union and intersection of these lists.
+
+Key Highlights of the Project: 
+1.developing Lists the use of related listing approach: broaden a related list-primarily based approach to create and manage the 2 enter lists.
+
+2.Node Insertion: enforce functions to insert nodes into the first and second lists thus.
+
+3.Intersection of information: put into effect a feature to discover the intersection of the data inside the lists.
+
+4.Union of records: put in force a function to find the union of the facts within the two lists.
+
+Deliverables of this project:
+1.Intersection of records of Lists: Code and functionality to compute the intersection of the two lists.
+
+2.Union of information of two Lists: Code and functionality to compute the union of the two lists.
+
+Expected Outcomes: 
+1.expertise related listing Node introduction: students will benefit knowledge of a way to create nodes using linked lists.
+
+2.Computing Intersection and Union: students will learn to compute the intersection and union of facts in two lists.
+
+3.evaluating factors: college students will expand competencies in comparing elements of two lists to carry out set operations.
+
+
+
+#include <stdio.h>
+
+#include <string.h>
+
+
+
+// Define the user structure
+
+struct User {
+
+    char name[50];
+
+    int age;
+
+    char email[100];
+
+};
+
+
+
+// Typedef for convenience
+
+typedef struct User User;
+
+
+
+// Function to print user information
+
+void printUser(User user) {
+
+    printf("Name: %s\n", user.name);
+
+    printf("Age: %d\n", user.age);
+
+    printf("Email: %s\n", user.email);
+
+}
+
+
+
+int main() {
+
+    // Create a user instance
+
+    User user1;
+
+
+
+    // Set user1's details
+
+    strcpy(user1.name, "Alice Smith");
+
+    user1.age = 30;
+
+    strcpy(user1.email, "alice.smith@example.com");
+
+
+
+    // Print user1's details
+
+    printUser(user1);
+
+
+
+    // Create another user instance
+
+    User user2;
+
+
+
+    // Set user2's details
+
+    strcpy(user2.name, "Bob Johnson");
+
+    user2.age = 25;
+
+    strcpy(user2.email, "bob.johnson@example.com");
+
+
+
+    // Print user2's details
+
+    printUser(user2);
+
+
+
+    return 0;
+
+}
+
